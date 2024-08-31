@@ -6,7 +6,8 @@ use crate::BlockDriverOps;
 use alloc::{vec, vec::Vec};
 use driver_common::{BaseDriverOps, DevError, DevResult, DeviceType};
 
-const BLOCK_SIZE: usize = 512;
+/// The block size of the RAM disk.
+pub const BLOCK_SIZE: usize = 512;
 
 /// A RAM disk that stores data in a vector.
 #[derive(Default)]
